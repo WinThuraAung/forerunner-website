@@ -1,4 +1,8 @@
+import ContactForm from "../components/contactform";
+
 export default function Contact() {
+  
+
   return (
     <section className="bg-white py-20 px-6 md:px-20 lg:px-40">
       <h1 className="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-4">
@@ -30,38 +34,7 @@ export default function Contact() {
         </div>
 
         {/* Contact Form */}
-        <form className="bg-gray-50 p-6 rounded-lg shadow-md space-y-6">
-          <div>
-            <label className="block text-gray-700 mb-1 font-medium">Name</label>
-            <input
-              type="text"
-              placeholder="Your full name"
-              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-          <div>
-            <label className="block text-gray-700 mb-1 font-medium">Email</label>
-            <input
-              type="email"
-              placeholder="you@example.com"
-              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-          <div>
-            <label className="block text-gray-700 mb-1 font-medium">Message</label>
-            <textarea
-              placeholder="Type your message here..."
-              rows={5}
-              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-black text-white py-3 px-6 rounded-md hover:bg-gray-800 transition duration-200 font-semibold"
-          >
-            Send Message
-          </button>
-        </form>
+        <ContactForm />
       </div>
     </section>
   );
