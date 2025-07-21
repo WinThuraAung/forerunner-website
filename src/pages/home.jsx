@@ -6,13 +6,14 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
     const images = [
-        "plastic-resins.jpg",
-        "plastic-resins2.jpg",
-        "plastic-resins3.jpg"]
+        "images/plastic-resins.jpg",
+        "images/plastic-resins2.jpg",
+        "images/plastic-resins3.jpg"]
 
 
     const [index, setIndex] = useState(0);
 
+    // Change image every 5 seconds
     useEffect(() => {
         const interval = setInterval(() => {
           setIndex((prev) => (prev + 1) % images.length);
@@ -25,7 +26,7 @@ export default function Home() {
         <>
               {/* Welcome Part*/}
       <div className="relative h-[600px] w-full overflow-hidden">
-        {/* Full width background that breaks out of container */}
+   
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-all duration-1000"
           style={{
@@ -65,7 +66,7 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
       <div className="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition">
         <div className="text-4xl mb-4 text-[#b38a36]">🔄</div>
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">Plastic Resin Trading</h3>
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">Plastic Resin Distribution</h3>
         <p className="text-gray-600">We supply a wide range of high-quality plastic resins tailored to industrial needs.</p>
       </div>
 
@@ -76,9 +77,9 @@ export default function Home() {
       </div>
 
       <div className="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition">
-        <div className="text-4xl mb-4 text-[#b38a36]">🌏</div>
+        <div className="text-4xl mb-4 text-[#b38a36]">🇲🇲</div>
         <h3 className="text-xl font-semibold text-gray-800 mb-2">Regional Distribution</h3>
-        <p className="text-gray-600">Our network spans across Asia to ensure fast and efficient regional supply coverage.</p>
+        <p className="text-gray-600">Our network spans across Myanmar to ensure fast and efficient regional supply coverage.</p>
       </div>
     </div>
   </div>

@@ -12,7 +12,7 @@ export default function Navbar() {
           style={{ textDecoration: 'none' }}
         >
           <img
-            src="/Forerunner Logo 2.png"
+            src="/images/Forerunner Logo 2.png"
             alt="FRN Logo"
             className="h-16 w-auto"
           />
