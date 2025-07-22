@@ -11,7 +11,7 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
   
-    const res = await fetch("http://localhost:5000/send-email", {
+    const res = await fetch("https://forerunner-website.onrender.com/send-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, message }),
@@ -24,7 +24,6 @@ export default function ContactForm() {
       alert("Something went wrong.");
     }
   };
-
 
 
     return (
