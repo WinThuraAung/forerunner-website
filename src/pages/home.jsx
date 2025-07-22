@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
     const images = [
-        "images/plastic-resins.jpg",
-        "images/plastic-resins2.jpg",
-        "images/plastic-resins3.jpg"]
+        "/images/plastic-resins.jpg",
+        "/images/plastic-resins2.jpg",
+        "/images/plastic-resins3.jpg"]
 
 
     const [index, setIndex] = useState(0);
